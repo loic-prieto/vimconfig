@@ -7,6 +7,9 @@ set history=700
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" To forget about saving buffers. Nice to use with CtrlP, which doesn't open buffers in windows with unsaved buffers
+set autowriteall
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -59,6 +62,8 @@ let g:ctrlp_custom_ignore = {
 " This makes a lot of sense if you are working on a project that is in version
 " control. It also supports works with .svn, .hg, .bzr.
 let g:ctrlp_working_path_mode = 'r'
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
